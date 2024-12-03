@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BentoBox - Fast Casual Restaurants</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #fffbfb0d;
+            /* border-bottom: 1px solid #383737; */
+            padding: 10px 20px;
+            display: flex;
+            position: fixed;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+        }
+
+        .navbar li {
+            margin: 0;
+        }
+
+        .navbar li a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #555;
+        }
+
+        .navbar li a:hover {
+            color: #000;
+        }
+
+        .right-actions {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .right-actions a {
+            color: #094d46;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .right-actions button {
+            background-color: #14838a;
+            color: white;
+            border: none;
+            padding: 15px 24px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .right-actions button:hover {
+            background-color: #30323b;
+        }
+
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+            background-color: #fffbfb0d;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 59px;
+            margin-bottom: -29px;
+            color: #333;
+            padding: 0px 139px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #555;
+            margin-top: 39px;
+            font-weight: bold;
+        }
+
+        .hero-text button {
+            background-color: #f15c50;
+            color: white;
+            border: none;
+            padding: 15px 24px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .hero-text button:hover {
+            background-color: #30323b;
+        }
+
+        .hero-image img {
+            max-width: 68%;
+            border-radius: 10px;
+            padding: 38px 19px;
+        }
+
+        .burger-image img {
+            max-width: 8%;
+            border-radius: 6px;
+            left: 18px;
+            position: absolute;
+            top: 163px;
+        }
+
+        .decorative-pattern {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(to bottom right, #fdf6ed, #f5e7d4);
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <strong>BentoBox</strong>
+        </div>
+        <ul class="navbar">
+            <li><a href="#">Why Bento</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Restaurant Type</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
+        <div class="right-actions">
+            <a href="#">+1 (877) 353-2447</a>
+            <a href="#">Sign In</a>
+            <button>Get Started</button>
+        </div>
+    </header>
+    <div class="decorative-pattern"></div>
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Fast Casual</h1>
+            <h1>Restaurants</h1>
+            <p>Up the delight factor for diners and your team with a digital platform that helps fast casual restaurants
+                do more with less.</p>
+            <button>Get Started</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.ctfassets.net/h81st780aesh/5HBJuwt3Aw09O3sZQH4LJi/6ee986634e3c7be0c1d1550c6eb3574a/Fast_Casual_-_Header_Image.png?fm=webp&w=1112&h=1112&fit=fill&f=center&q=50"
+                alt="Burger">
+        </div>
+        <div class="burger-image">
+            <img src="https://images.ctfassets.net/h81st780aesh/55QP8E4hxR0EYEpj8d9eZq/b426c6c687b2385dbf7f04338d427bcd/icons-10.png?fm=webp&w=1920&fit=fill&f=center&q=50"
+                alt="">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Keep it moving</h2>
+        <p>
+            And keep it elevated. BentoBox’s digital marketing and commerce platform helps fast casual restaurants
+            establish an online look and feel that’s totally theirs while streamlining operations to bring in more
+            revenue.
+        </p>
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.ctfassets.net/h81st780aesh/5HBJuwt3Aw09O3sZQH4LJi/6ee986634e3c7be0c1d1550c6eb3574a/Fast_Casual_-_Header_Image.png?fm=webp&w=1112&h=1112&fit=fill&f=center&q=50"
+                    alt="Image 1">
+                <h3>Fast Casual</h3>
+                <p>Up the delight factor for diners and your team with a digital platform that helps fast casual
+                    restaurants do more with less.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.ctfassets.net/h81st780aesh/5HBJuwt3Aw09O3sZQH4LJi/6ee986634e3c7be0c1d1550c6eb3574a/Fast_Casual_-_Header_Image.png?fm=webp&w=1112&h=1112&fit=fill&f=center&q=50"
+                    alt="Image 2">
+                <h3>Fast Casual</h3>
+                <p>Up the delight factor for diners and your team with a digital platform that helps fast casual
+                    restaurants do more with less.</p>
+            </div>
+    </section>
+    
+</body>
