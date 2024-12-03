@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #181818;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #212121;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 11px 0px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header img {
+            height: 40px;
+            margin-left: 1px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #121212;
+            border-radius: 24px;
+            overflow: hidden;
+            flex: 1;
+            max-width: 600px;
+            margin: 0 20px;
+        }
+
+        .search-bar input {
+            background: transparent;
+            border: none;
+            padding: 8px 16px;
+            color: #ffffff;
+            flex: 1;
+            outline: none;
+        }
+
+        .search-bar button {
+            background-color: #313131;
+            border: none;
+            color: #ffffff;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #454545;
+        }
+
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #333333;
+            border-radius: 50%;
+            margin-right: 35px;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 200px;
+            height: 100vh;
+            background-color: #212121;
+            padding-top: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 19px;
+        }
+
+        .sidebar li a {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar li a:hover {
+            background-color: #383838;
+        }
+
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+            margin-top: 80px;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .video-card:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: transform 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+           
+        }
+
+        .video-card {
+            background-color: #282828;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .video-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .video-info {
+            padding: 10px;
+        }
+
+        .video-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .video-details {
+            font-size: 14px;
+            color: #aaaaaa;
+        }
+        header h2 {
+            margin-left: -224px;
+        }
+        
+       
+       
+        
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="YouTube-Logo.png" alt="YouTube Logo">
+        <h2>YouTube</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>🔍</button>
+        </div>
+        <div class="profile-icon">
+            <img src="profile.png" alt="Profile Icon">
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Subscriptions</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Your Videos</a></li>
+            <li><a href="#">Watch Later</a></li>
+            <li><a href="#">Liked Videos</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="video-grid">
+            <div class="video-card">
+                <img src="web.jpeg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <div class="video-title">Web Development Tutorial</div>
+                    <div class="video-details">CodeWithHarry • 103 lessons</div>
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="tree.jpeg"Video Thumbnail">
+                <div class="video-info">
+                    <div class="video-title">Sunset</div>
+                    <div class="video-details">Pro Know • 14:45</div>
+
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="friends.jpeg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <div class="video-title">Friends Moments</div>
+                    <div class="video-details">Pro Know • 15:45</div>
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="nacher.jpeg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <div class="video-title">Nacher</div>
+                    <div class="video-details">Pro Know • 21:45</div>
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="Untitled.jpeg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <div class="video-title">Tourist</div>
+                    <div class="video-details">Pro Know • 10:45</div>
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="car.jpeg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <div class="video-title">RC Car Build</div>
+                    <div class="video-details">Pro Know • 19:45</div>
+
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="school.jpeg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <div class="video-title">School</div>
+                                            <div class="video-details">Pro Know • 14:45</div>
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="Family.jpeg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <div class="video-title">Family</div>
+                    <div class="video-details">Pro Know • 22:45</div>
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="Travel.jpeg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <div class="video-title">Travel</div>
+                    <div class="video-details">Pro Know • 16:45</div>
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="Water-Spotes.jpeg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <div class="video-title">Water Sports</div>
+                    <div class="video-details">Pro Know • 14:45</div>
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="Manali.jpeg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <div class="video-title">Manali</div>
+                    <div class="video-details">Pro Know • 20:45</div>
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="Dharmaveer2.jpeg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <div class="video-title">Dharmaveer2</div>
+                    <div class="video-details">Pro Know • 18:45</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
