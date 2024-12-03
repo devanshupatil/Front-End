@@ -1,43 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devnashu</title>
+    <title>Java Programming Classes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 </head>
+
 <body>
-    
-    <h2>Index HTML</h2>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Java</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#topics">Topics</a>
+                <a href="#instructor">Instructor</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    <form action="backend.java">
+    <header id="home">
+        <div class="hero-content">
+            <h1>Java Programming</h1>
+            <p>Learn Java from industry experts and build real-world applications</p>
+            <a href="#contact" class="cta-button">Start Learning</a>
+        </div>
+        <div class="wave"></div>
+    </header>
 
-        <div>
-            NAME: <input type="text"><br>
+    <section id="topics">
+        <h2>Course Topics</h2>
+        <div class="topics-grid">
+            <div class="topic-card">
+                <div class="topic-icon">✓</div>
+                <h3>Introduction to Java</h3>
+                <p>In this module, we will introduce you to Java, examine the benefits of Java, and the ways in which
+                    Java is packaged. We will see how Java can be installed, and we will demo Hello World in Java.</p>
+                
+            </div>
+            <div class="topic-card">
+                <div class="topic-icon">✓</div>
+                <h3>Advanced Java</h3>
+                <p>This module introduces a bit of basic Java syntax, but primarily focuses on Java's primitive types, and their wrapper classes. This module concludes with a brief introduction to the associated lab environment within your browser and learning to configure the environment to work in the best fashion for yourself. You then proceed to open the IDE used in this environment, Eclipse, and review the different elements within it. Finally, you will be reading for lab exercises related to this module.</p>
+                <span class="duration">6 Weeks</span>
+            </div>
+            <div class="topic-card">
+                <div class="topic-icon">✓</div>
+                <h3>Spring Framework</h3>
+                <p>Build enterprise applications using Spring Boot, Spring MVC, and Spring Data.</p>
+                <span class="duration">8 Weeks</span>
+            </div>
+            <div class="topic-card">
+                <div class="topic-icon">✓</div>
+                <h3>Database Integration</h3>
+                <p>Learn JDBC, JPA, and working with MySQL and PostgreSQL databases.</p>
+                <span class="duration">4 Weeks</span>
+            </div>
+            <div class="topic-card">
+                <div class="topic-icon">✓</div>
+                <h3>API Development</h3>
+                <p>Create RESTful APIs and integrate third-party services in Java applications.</p>
+                <span class="duration">5 Weeks</span>
+            </div>
+            <div class="topic-card">
+                <div class="topic-icon">✓</div>
+                <h3>Testing & Deployment</h3>
+                <p>Master unit testing, integration testing, and deploying Java applications.</p>
+                <span class="duration">3 Weeks</span>
+            </div>
         </div>
-        <br>
-        <div>
-            PASSWORD: <input type="password"><br>
-        </div>
-        <br>
-        <div>
-            ROLE: <input type="text"><br>
-        </div>
-        <br>
-        <div>
-            <input type="submit" value="Submit Now">
-        </div>
-        <br>
-        <div>
-            Date: <input type="date">
-        </div>
-        <br>
-        <div>
-            Email: <input type="email"><br>
-        </div>
-        <br>
-    </form>
+    </section>
 
-    <!-- <img src="https://images.unsplash.com/photo-1458571037713-913d8b481dc6?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1920" alt="error loading image"> -->
+    <section id="instructor" class="dark-section">
+        <div class="instructor-container">
+            <!-- <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&q=80&w=400&h=400" 
+                 alt="Professor James Anderson" 
+                 class="instructor-image"> -->
+            <div class="instructor-info">
+                <h2>Devanshu Patil</h2>
+                <p>With over 15 years of industry experience at top tech companies and a passion for teaching,
+                    Professor Anderson brings real-world expertise to the classroom. He holds a Ph.D. in Computer
+                    Science
+                    and has helped hundreds of students launch their programming careers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <span class="icon">✉</span>
+                    <div>
+                        <h3>Email</h3>
+                        <p>devanshupatil692@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="icon">☏</span>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 - 7397927021</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Adarsha nagar nandura road motala</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <form class="contact-form">
+                <div class="form-group">
+                     <label for="name">Name</label> -->
+            <!-- <input type="text" id="name" required> -->
+            <!-- </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button> -->
+            <!-- </form> -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 JavaMaster. All rights reserved.</p>
+        <p>Views: <span id="view-count">0</span></p>
+    </footer>
+
+    <script>
+        // Simulate view count increment
+        document.addEventListener('DOMContentLoaded', () => {
+            const viewCountElement = document.getElementById('view-count');
+            let viewCount = parseInt(localStorage.getItem('viewCount')) || 0;
+            viewCount++;
+            localStorage.setItem('viewCount', viewCount);
+            viewCountElement.textContent = viewCount;
+        });
+    </script>
 </body>
+
 </html>
-<!-- https://images.unsplash.com/photo-1458571037713-913d8b481dc6?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1920 -->
+
